@@ -16,7 +16,7 @@
     </define>
     <define append="true">
       <name>CONFIG::timeStamp</name>
-      <value>'22-4-2015'</value>
+      <value>'11-5-2015'</value>
     </define>
     <define append="true">
       <name>CONFIG::air</name>
@@ -37,12 +37,12 @@
     </source-path>
   </compiler>
   <file-specs>
-    <path-element>C:\Users\Nathan\Documents\Bewijzenmap\periode4\dip\asteroids\Assteroids\src\mainMenu.as</path-element>
+    <path-element>C:\Users\Nathan\Documents\Bewijzenmap\periode4\dip\asteroids\Assteroids\src\Main.as</path-element>
   </file-specs>
   <default-background-color>#FFFFFF</default-background-color>
-  <default-frame-rate>30</default-frame-rate>
+  <default-frame-rate>60</default-frame-rate>
   <default-size>
-    <width>800</width>
-    <height>600</height>
+    <width>1920</width>
+    <height>1080</height>
   </default-size>
 </flex-config>

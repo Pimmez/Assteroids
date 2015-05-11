@@ -10,16 +10,16 @@ package
 	import flash.events.KeyboardEvent;
 	
 	
-	public class Background extends Sprite
+	public class endShip extends Sprite
 	{
-		[Embed(source="../img/background.jpg")]
+		[Embed(source="../img/endship.png")]
 		private var BackgroundImage:Class;
 		private var bgImage:Bitmap;
 		
 		
-			public function Background()
+			public function endShip()
 			{
-			this.addEventListener(Event.ADDED_TO_STAGE, init);
+			addEventListener(Event.ADDED_TO_STAGE, init);
 			 
 			}
 			
@@ -28,12 +28,18 @@ package
 			{
 			bgImage = new BackgroundImage();
 			addChild(bgImage);
+			this.x = 2000;
+			this.y = 800;
 			this.addEventListener(Event.ENTER_FRAME, loop);
-			this.scaleX = this.scaleY = 2;
+			this.scaleX = this.scaleY = 0.6;
 			}
 			private function loop(e:Event):void
 			{
-				
+				this.x -= 10;
+				if (this.x <= 400)
+				{
+					//parent.removeChildAt(parent.getChildIndex(this));
+				}
 			}
 			
 	}

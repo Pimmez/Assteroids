@@ -27,7 +27,7 @@ package
 			bgImage = new BackgroundImage();
 			addChild(bgImage);
 			this.addEventListener(Event.ENTER_FRAME, loop);
-			this.x = -200;
+			this.scaleX = this.scaleY = 1.5;
 			}
 			private function loop(e:Event):void
 			{

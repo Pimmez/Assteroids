@@ -12,7 +12,7 @@ package
 		{
 			this.graphics.beginFill(0x000000, 1);
 			
-			this.graphics.drawRect(0, 0, 1920/2, 1080/2);
+			this.graphics.drawRect(0, 0, 1920, 1080);
 			//this.graphics.drawRect(0, 0, 520, 480);
 			this.graphics.endFill();
 			

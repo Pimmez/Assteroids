@@ -10,14 +10,14 @@ package
 	import flash.events.KeyboardEvent;
 	
 	
-	public class Background extends Sprite
+	public class Bar extends Sprite
 	{
-		[Embed(source="../img/background.jpg")]
+		[Embed(source="../img/bar.png")]
 		private var BackgroundImage:Class;
 		private var bgImage:Bitmap;
 		
 		
-			public function Background()
+			public function Bar()
 			{
 			this.addEventListener(Event.ADDED_TO_STAGE, init);
 			 
@@ -29,7 +29,7 @@ package
 			bgImage = new BackgroundImage();
 			addChild(bgImage);
 			this.addEventListener(Event.ENTER_FRAME, loop);
-			this.scaleX = this.scaleY = 2;
+			this.scaleX = this.scaleY = 1;
 			}
 			private function loop(e:Event):void
 			{

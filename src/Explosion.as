@@ -10,26 +10,32 @@ package
 	import flash.events.KeyboardEvent;
 	
 	
-	public class Button extends Sprite
+	public class Explosion extends Sprite
 	{
-		[Embed(source="../img/playbutton.png")]
+		[Embed(source="../img/explosion.png")]
 		private var BackgroundImage:Class;
 		private var bgImage:Bitmap;
 		
 		
-		public function Button()
-		{
+			public function Explosion()
+			{
 			this.addEventListener(Event.ADDED_TO_STAGE, init);
-		}
+			 
+			}
 			
 			
-		private function init(e:Event = null):void
-		{
+			private function init(e:Event = null):void
+			{
 			bgImage = new BackgroundImage();
 			addChild(bgImage);
-			this.scaleX = this.scaleY = 0.5;
-			this.x = 40;
-			this.y = 100;
-		}	
+			this.addEventListener(Event.ENTER_FRAME, loop);
+			this.scaleX = this.scaleY = 0.6;
+			}
+			private function loop(e:Event):void
+			{
+				
+			}
+			
 	}
+
 }
